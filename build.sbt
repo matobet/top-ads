@@ -12,9 +12,10 @@ lazy val root = (project in file("."))
       circeDependencies ++
       fs2Dependencies ++
       Seq(
-        "org.typelevel" %% "kittens" % "2.1.0",
-        "org.typelevel" %% "cats-effect" % "2.1.4",
-        "io.scalaland" %% "catnip" % "1.0.0",
+        parallelCollections,
+        kittens,
+        catsEffect,
+        catnip,
         scalaTest % Test
       )
     ),
